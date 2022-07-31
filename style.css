@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,100&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./images/213555826.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+.card {
+  height: 425px;
+  width: 700px;
+  display: flex;
+}
+
+.right {
+  background-color: #00000013;
+  padding: 10px;
+  flex: 1;
+  backdrop-filter: blur(10px);
+  color: #fff;
+  box-shadow: 0px 2px 5px rgba(63, 35, 167, 0.26);
+}
+.left {
+  background-color: rgb(0, 19, 128, 0.274);
+  backdrop-filter: blur(10px);
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.top {
+  flex: 1;
+
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.bottom {
+  padding: 30px;
+}
+.weather {
+  display: flex;
+  font-size: 32px;
+  font-weight: bold;
+}
+.dot {
+  font-size: 8px;
+  margin-top: 6px;
+}
+.top i {
+  font-size: 60px;
+}
+.task-row {
+  display: flex;
+  gap: 10px;
+  margin: 10px;
+  font-size: 12px;
+  color: #fff;
+}
+.text {
+  padding-left: 10px;
+}
+.bottom .title {
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.time {
+  font-weight: bold;
+  background-color: #fff;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.2rem 1.5rem;
+  border-radius: 4rem;
+}
+
+.right .row:nth-child(1) {
+  display: flex;
+  padding: 10px 0;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 21px;
+}
+.date-text {
+  font-size: 32px;
+  font-weight: bold;
+}
+.row:nth-child(2) {
+  display: flex;
+}
+.row .week {
+  flex: 1;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+}
+.day-grid {
+  display: grid;
+  grid-template-columns: repeat(7, auto);
+}
+.day {
+  margin: 2px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.active {
+  border-radius: 50%;
+  font-weight: bold;
+  /* background-color: darkblue; */
+  background-color: rgb(49, 141, 49);
+  color: #fff;
+}
